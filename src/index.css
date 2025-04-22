@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+*{
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#resicon h1{
+    display: none;
+}
+
+
+@media (max-width: 750px) {
+    #login button{
+        display: none;
+    }
+    ul li{
+        display: none;
+    }
+    #resicon h1{
+        display: block;
+    }
+
+    nav {
+        flex-direction: row !important;
+        padding: 10px 20px !important;
+    }
+
+    #img{
+        width: 50%;
+     }
+
+    #login {
+        width: 50% !important;
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-end !important;
+        gap: 10px;
+        align-items: center;
+    }
+    #login #resicon{
+        gap: 30px;
+    }
+   
+
+    #center ul {
+        flex-direction: column !important;
+        gap: 10px !important;
+    }
+}
