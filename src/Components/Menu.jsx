@@ -3,21 +3,21 @@ import img from '../assets/mainimg.jpg'
 
 const Menu = () => {
     return (
-        <div className='w-full h-[80vh] flex'>
-            <div className='flex items-center justify-center w-[55%] h-[100%]'>
-                <div className='w-[55%] flex flex-col gap-6'>
-                    <div className='flex justify-center'>
-                        <p className='text-gray-400'>--FRESH & DELICIOUS</p>
+        <div className='w-full h-auto md:h-[80vh] flex flex-col md:flex-row'>
+            <div className='flex items-center justify-center w-full md:w-[55%] h-auto md:h-[100%] p-6 md:p-0'>
+                <div className='w-full md:w-[55%] flex flex-col gap-4 md:gap-6'>
+                    <div className='flex justify-start'>
+                        <p className='text-gray-400 text-sm md:text-base'>--FRESH & DELICIOUS--</p>
                     </div>
-                    <div className='justify-center text-4xl'>
-                        <p className=' flex justify-center'>Delicious Meals</p>
-                        <p className=' flex justify-center'><span className='text-orange-600 font-bold'>Delivered</span> To Your Home</p>
+                    <div className='text-2xl md:text-4xl'>
+                        <p className='flex justify-start'>Delicious Meals</p>
+                        <p className='flex justify-start'><span className='text-orange-600 font-bold'>Delivered</span> To Your Home</p>
                     </div>
                     <div className=''>
-                        <p className='text-gray-400 flex justify-center'>Enjoy Fresh,flavourful meals made with the finest ingredients,</p>
-                        <p className='text-gray-400 flex justify-center'>delivered straight to your door, any time.</p>
+                        <p className='text-gray-400 text-sm md:text-base flex justify-start'>Enjoy Fresh, flavourful meals made with the finest ingredients,</p>
+                        <p className='text-gray-400 text-sm md:text-base flex justify-start'>delivered straight to your door, any time.</p>
                     </div>
-                    <div className='w-[100%] flex items-center justify-center gap-10 mt-6 '>
+                    <div className='w-full flex items-center justify-start gap-6 md:gap-10 pt-6 md:pt-8'>
                         <button className='bg-orange-400 p-3 rounded-2xl text-white cursor-pointer hover:bg-orange-600 transition-all'>
                             Order Now
                         </button>
@@ -30,9 +30,9 @@ const Menu = () => {
 
 
 
-            <div className='w-[45%] h-[80vh] flex items-center'>
-                <div className='w-[30rem] h-[30rem] object-cover'>
-                    <img src={img} />
+            <div className='w-full md:w-[45%] h-auto md:h-[80vh] flex items-center justify-center p-6 md:p-0'>
+                <div className='w-full max-w-xs md:w-[30rem] h-auto md:h-[30rem] object-cover'>
+                    <img src={img} className='w-full h-full object-cover rounded-lg' alt="Delicious meal" />
                 </div>
             </div>
         </div>

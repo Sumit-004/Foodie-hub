@@ -9,37 +9,37 @@ import { GiHamburger } from "react-icons/gi";
 {
     id:1,
     name:"All",
-    icon:<FaBorderAll className="w-[60px] h-[60px] text-orange-500"/>,
+    icon:<FaBorderAll className="w-[30px] h-[30px] md:w-[60px] md:h-[60px] text-orange-500"/>,
 },
 {
     id:2,
     name:"Breakfast",
-    icon:<GiCoffeeCup className="w-[60px] h-[60px] text-orange-500"/>,
+    icon:<GiCoffeeCup className="w-[30px] h-[30px] md:w-[60px] md:h-[60px] text-orange-500"/>,
 },
 {
     id:3,
     name:"Soups",
-    icon:<MdSoupKitchen className="w-[60px] h-[60px] text-orange-500"/>,
+    icon:<MdSoupKitchen className="w-[30px] h-[30px] md:w-[60px] md:h-[60px] text-orange-500"/>,
 },
 {
     id:4,
     name:"Pasta",
-    icon:<GiNoodles className="w-[60px] h-[60px] text-orange-500"/>,
+    icon:<GiNoodles className="w-[30px] h-[30px] md:w-[60px] md:h-[60px] text-orange-500"/>,
 },
 {
     id:5,
-    name:"Main Course",
-    icon:<MdFoodBank className="w-[60px] h-[60px] text-orange-500"/>,
+    name:"MainCourse",
+    icon:<MdFoodBank className="w-[30px] h-[30px] md:w-[60px] md:h-[60px] text-orange-500"/>,
 },
 {
     id:6,
     name:"Pizza",
-    icon:<FaPizzaSlice className="w-[60px] h-[60px] text-orange-500"/>,
+    icon:<FaPizzaSlice className="w-[30px] h-[30px] md:w-[60px] md:h-[60px] text-orange-500"/>,
 },
 {
     id:7,
     name:"Burger",
-    icon:<GiHamburger className="w-[60px] h-[60px] text-orange-500"/>,
+    icon:<GiHamburger className="w-[30px] h-[30px] md:w-[60px] md:h-[60px] text-orange-500"/>,
 },
 
 ]

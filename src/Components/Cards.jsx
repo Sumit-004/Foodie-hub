@@ -5,16 +5,16 @@ import { GiChickenOven } from "react-icons/gi";
 const Cards = (prompt) => {
   return (
   
-    <div className='w-[320px] h-[400px] p-4 flex flex-col gap-4 shadow-2xl shadow-gray-500 rounded-2xl hover:border-4 border-orange-300 transition-all'>
+    <div className='md:w-[320px] md:h-[400px] w-[130px] h-[190px] md:p-4 p-2 flex flex-col md:gap-4 gap-1 shadow-2xl shadow-gray-500 rounded-2xl hover:border-4 border-orange-300 transition-all'>
       <div className='w-[100%] h-[55%] overflow-hidden rounded-2xl'>
         <img src={prompt.image} alt="img" className='object-cover' />
       </div>
-      <div className=' text-[25px] font-semibold'>{prompt.name}</div>
-      <div className='flex justify-between text-[20px] mt-3'>
+      <div className=' md:text-[25px] text-[13px] font-semibold'>{prompt.name}</div>
+      <div className='flex justify-between md:text-[20px] text-[13px] mt-3'>
         <div>Rs.{prompt.price}</div>
-        <div className='flex items-center justify-center gap-2'>{prompt.type==="veg" ? <ImLeaf/> : <GiChickenOven/>}<span>{prompt.type}</span></div>
+        <div className='flex items-center justify-center md:gap-2 gap-1'>{prompt.type==="veg" ? <ImLeaf/> : <GiChickenOven/>}<span>{prompt.type}</span></div>
       </div>
-      <button className='w-full h-[45px] text-[22px] bg-orange-400 rounded-xl cursor-pointer hover:bg-orange-300'>Add to Dish</button>
+      <button className='w-full md:h-[45px] h-[30px] md:text-[22px] text-[10px] bg-orange-400 rounded-xl cursor-pointer hover:bg-orange-300'>Add to Dish</button>
     </div>
     
   )

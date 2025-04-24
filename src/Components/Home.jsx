@@ -26,15 +26,15 @@ const Home = () => {
         <div>
             <Header />
             <Menu />
-            <div className='w-[100%] flex flex-wrap justify-center items-center gap-10'>
+            <div className='w-[100%] flex flex-wrap justify-center items-center md:gap-10 gap-5 pb-5'>
                 {Category.map((item) => {
-                    return <div className='flex-col h-[120px] w-[120px] p-2  border-2 border-amber-500 shadow-2xl shadow-gray-500 rounded-2xl hover:bg-orange-300 cursor-pointer transition-all' onClick={() => choice(item.name)}>
-                        <h2 className='flex justify-center'>{item.name}</h2>
+                    return <div className='flex-col md:h-[120px] md:w-[120px] h-[60px] w-[60px]  md:p-2 p-1  border-2 border-amber-500 shadow-2xl shadow-gray-500 rounded-2xl hover:bg-orange-300 cursor-pointer transition-all' onClick={() => choice(item.name)}>
+                        <h2 className='flex justify-center items-center text-[10px] md:text-[15px]'>{item.name}</h2>
                         <div className='flex justify-center'>{item.icon}</div>
                     </div>
                 })}
             </div>
-            <div className='flex flex-wrap gap-8 p-9 items-center justify-center'>
+            <div className='flex flex-wrap gap-8 md:p-9 p-2 items-center justify-center'>
                 {cate.map((item) => (
                     <Cards name={item.food_name} image={item.food_image} type={item.food_type} price={item.price} id={item.id} />
                 ))}
