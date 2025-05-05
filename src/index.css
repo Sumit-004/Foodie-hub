@@ -16,9 +16,7 @@
     #login button{
         display: none;
     }
-    ul li{
-        display: none;
-    }
+    
     #resicon h1{
         display: block;
     }
@@ -49,4 +47,8 @@
         flex-direction: column !important;
         gap: 10px !important;
     }
+}
+#signin{
+    background: transparent;
+    backdrop-filter: blur(20px);
 }

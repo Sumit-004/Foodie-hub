@@ -59,7 +59,7 @@ const Menu = () => {
                 <div className='relative text-[25px] md:text-[30px] border-4 border-amber-600 h-[50px] md:h-[60px] w-[60px] md:w-[60px] flex items-center justify-center rounded-[20%] font-semibold cursor-pointer hover:bg-gray-200' onClick={()=>{
                     setShowCart(true)
                 }}>
-                    <span className='absolute text-[16px] md:text-[15px] top-0 right-1 text-orange-800'>{items.length}</span>
+                    <span className='absolute text-[16px] md:text-[15px] md:top-0 right-0 top-0 md:right-1 text-orange-800'>{items.length}</span>
                     <RiShoppingBasketFill className='text-orange-500'/>
                 </div>
             </form>

@@ -4,10 +4,12 @@ import { IoIosMail } from "react-icons/io";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+
 
 const Footer = () => {
     return (
-        <footer id='footer' className='bg-orange-400 w-full mt-10'>
+        <footer id='footer' className='bg-orange-400 w-full mt-10 p-8'>
             <div className='flex flex-col md:flex-row md:justify-between md:items-start px-6 py-8 gap-8 md:gap-0'>
                 <div className='md:w-1/2 flex flex-col gap-6'>
                     <div>
@@ -16,9 +18,10 @@ const Footer = () => {
                         <p className='flex gap-2 items-center text-lg'><IoIosMail />E-mail: sh.sumit2004@gmail.com</p>
                     </div>
                     <div className='text-3xl flex gap-6'>
-                        <FaGithub />
-                        <FaLinkedin/>
-                        <FaFacebook/>
+                        <a href="https://github.com/Sumit-004"><FaGithub /></a>
+                        <a href=''><FaXTwitter/></a>
+                        <a href=""><FaLinkedin/></a>
+                        <a href=""><FaFacebook/></a>
                     </div>
                 </div>
 

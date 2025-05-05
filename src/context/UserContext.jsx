@@ -6,13 +6,23 @@ function UserContext({children}) {
     let [cate, setCate] = useState(food_items)
     let [input,setInput]=useState("") 
     let [showCart,setShowCart]=useState(false)
+    let [showSignIn,setShowSignIn]=useState(false)
+    let [showSignUp,setShowSignUp]=useState(false)
+    let [showMenu,setShowMenu]=useState(false)
+
     let data={
         input,
         setInput,
         cate,
         setCate,
         showCart,
-        setShowCart
+        setShowCart,
+        showSignIn,
+        setShowSignIn,
+        showSignUp,
+        setShowSignUp,
+        showMenu,
+        setShowMenu,
     }
   return (
     <div>

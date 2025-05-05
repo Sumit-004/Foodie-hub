@@ -3,13 +3,14 @@ import { ImLeaf } from "react-icons/im";
 import { GiChickenOven } from "react-icons/gi";
 import { useDispatch } from 'react-redux';
 import { AddItem } from '../redux/cartSlice';
+import { toast } from 'react-toastify';
 
 const Cards = (prompt) => {
   const dispatch = useDispatch();
 
   return (
   
-    <div className='md:w-[320px] md:h-[400px] w-[130px] h-[190px] md:p-4 p-2 flex flex-col md:gap-4 gap-1 shadow-2xl shadow-gray-500 rounded-2xl hover:border-4 border-orange-300 transition-all'>
+    <div id='food' className='md:w-[320px] md:h-[400px] w-[130px] h-[190px] md:p-4 p-2 flex flex-col md:gap-4 gap-1 shadow-2xl shadow-gray-500 rounded-2xl hover:border-2 border-orange-400 transition-all'>
       <div className='w-[100%] h-[55%] overflow-hidden rounded-2xl'>
         <img src={prompt.image} alt="img" className='object-cover' />
       </div>
@@ -18,7 +19,7 @@ const Cards = (prompt) => {
         <div>Rs.{prompt.price}</div>
         <div className='flex items-center justify-center md:gap-2 gap-1'>{prompt.type==="veg" ? <ImLeaf/> : <GiChickenOven/>}<span>{prompt.type}</span></div>
       </div>
-      <button className='w-full md:h-[45px] h-[30px] md:text-[22px] text-[10px] bg-orange-400 rounded-xl cursor-pointer hover:bg-orange-300' onClick={()=>dispatch(AddItem({id:prompt.id, name:prompt.name, image:prompt.image, price:prompt.price, qty:1}))}>Add to Dish</button>
+      <button className='w-full md:h-[45px] h-[30px] md:text-[22px] text-[10px] bg-orange-400 rounded-xl cursor-pointer hover:bg-orange-300' onClick={()=>{dispatch(AddItem({id:prompt.id, name:prompt.name, image:prompt.image, price:prompt.price, qty:1})); toast.success(prompt.name+' Added')}}>Add to Dish</button>
     </div>
     
   )
